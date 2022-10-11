@@ -15,7 +15,9 @@ public class SelectHairColors : MonoBehaviour
 
     private Color currentHairColor;
 
-  
+
+   
+
     public List<SkinnedMeshRenderer> rendererList = new List<SkinnedMeshRenderer>();
 
     public void UpdeteSliders()
@@ -32,7 +34,8 @@ public class SelectHairColors : MonoBehaviour
 
         for (int i = 0; i < rendererList.Count; i++)
         {
-            rendererList[i].material.SetColor("_Color_Hair", currentHairColor);
+            //rendererList[i].material.SetColor("_Color_Hair", currentHairColor);
+            rendererList[i].material.SetColor("_Color", currentHairColor);
         }
     }
 }

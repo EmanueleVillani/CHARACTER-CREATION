@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SelectHairColors : MonoBehaviour
 {
+    [Header("Color Values")]
     public float redAmount;
     public float greenAmount;
     public float blueAmount;
     public float alphaAmount;
 
+    [Header("Color Sliders")]
     public Slider redSlider;
     public Slider greenSlider;
     public Slider blueSlide;
